@@ -37,11 +37,5 @@ public class Professor extends Pessoas{
         public void Falar(){
             System.out.println("estou falando");
         }
-        @Override
-      public void exibirInformacoes(){
-        super.exibirInformacoes();//puxa da classe pessoa
-        System.out.println("Materia: "+materia);
-        System.out.println("Quantidade de Aulas: "+quantidadeDeAulas);
-        System.out.println("Salario: "+salario);
-}
+       
 }

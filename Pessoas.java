@@ -4,7 +4,7 @@ public class Pessoas{
     private int idade ;
     private double altura;
     private float peso ;
-    private boolean responsavel;
+    private String responsavel;
 
 //metodo contrutor
 Pessoas(){
@@ -12,10 +12,10 @@ Pessoas(){
     this.idade=0;
     this.altura=0;
     this.peso=0;
-    this.responsavel=true;
+    this.responsavel=" ";
 }
 
-Pessoas(String nome,int idade, double altura, float peso,boolean responsavel){
+Pessoas(String nome,int idade, double altura, float peso,String responsavel){
     this.nome= nome;
     this.idade= idade;
     this.altura= altura;
@@ -47,11 +47,11 @@ public float getPeso(){
 public void setPeso(float valor){
     this.peso = valor;
 }
-public boolean getResponsavel(){
+public String getResponsavel(){
     return responsavel;
 }
-public void setResponsavel(boolean valor){
-    this.responsavel= valor ;
+public void setResponsavel(String responsavel){
+    this.responsavel= responsavel ;
 }
 
 //oque eles fazem
@@ -68,11 +68,5 @@ public void setResponsavel(boolean valor){
             System.out.println("estou falando");
         }
 
-        public void exibirInformacoes(){
-            System.out.println("Nome: "+nome);
-            System.out.println("Idade: "+idade);
-            System.out.println("Altura: "+altura);
-            System.out.println("Peso: "+ peso);
-            System.out.println("Responsavel"+responsavel);
+       
         }
-}

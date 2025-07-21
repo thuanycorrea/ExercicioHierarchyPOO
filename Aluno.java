@@ -1,7 +1,7 @@
 public class Aluno extends Pessoas{
    //atributos
     private double notas ;
-    private boolean frequencia ;
+    private double frequencia ;
     private float mediafinal ;
 
     //metodo construtor
@@ -13,10 +13,10 @@ public class Aluno extends Pessoas{
         public void setNotas(double valor){
            this.notas = valor;
         }
-        public boolean getFrequencia(){
+        public double getFrequencia(){
             return frequencia ;
         }
-        public void setFrequencia(boolean valor){
+        public void setFrequencia(double valor){
             this.frequencia = valor;
         }
         public float getMediaFinal(){
@@ -37,14 +37,9 @@ public class Aluno extends Pessoas{
         public void Falar(){
             System.out.println("estou falando");
         }
-      @Override
-      public void exibirInformacoes(){
-        super.exibirInformacoes();//puxa da classe pessoa
-        System.out.println("Nota: "+notas);
-        System.out.println("frequencia: "+frequencia);
-        System.out.println("Media Final: "+mediafinal);
+      
 
       }
-    }
+    
 
  

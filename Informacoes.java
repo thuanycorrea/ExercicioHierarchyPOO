@@ -6,7 +6,7 @@ public class Informacoes{
     pessoas.setIdade(17) ;
     pessoas.setAltura(1.60);
     pessoas.setPeso(57);
-    pessoas.setResponsavel(true);
+    pessoas.setResponsavel("sim,responsavel");
 
         //oque eles fazem
         pessoas.Estudando();
@@ -18,9 +18,9 @@ public class Informacoes{
        AlunosEmGeral.setIdade(16);
        AlunosEmGeral.setAltura(1.60);
        AlunosEmGeral.setPeso(56);
-       AlunosEmGeral.setResponsavel(true );
+       AlunosEmGeral.setResponsavel("sim, responsavel" );
        AlunosEmGeral.setNotas(9.0);
-       AlunosEmGeral.setFrequencia(true);
+       AlunosEmGeral.setFrequencia(80);
        AlunosEmGeral.setMediaFinal(8);
 
        AlunosEmGeral.Estudando();
@@ -28,11 +28,11 @@ public class Informacoes{
        AlunosEmGeral.Falar();
       
       Professor ProfessoresEmGeral = new Professor();
-      ProfessoresEmGeral.setNome("professor jhonatan");
+      ProfessoresEmGeral.setNome("jhonatan");
       ProfessoresEmGeral.setIdade(47);
       ProfessoresEmGeral.setAltura(1.78);
       ProfessoresEmGeral.setPeso(70);
-      ProfessoresEmGeral.setResponsavel(true );
+      ProfessoresEmGeral.setResponsavel("sim,responsavel");
       ProfessoresEmGeral.setMateria("biologia");
       ProfessoresEmGeral.setQuantidadeDeAulas(5);
       ProfessoresEmGeral.setSalario(1.700);
@@ -63,7 +63,7 @@ public class Informacoes{
                          System.out.println(mensagem2);
 
              System.out.println("\n########PROFESSOR###########");
-   String mensagem3 = "\nNome:"+ProfessoresEmGeral.getNome()+                
+   String mensagem3 = "\nNome do Professor:"+ProfessoresEmGeral.getNome()+                
                         "\nIdade:"+ProfessoresEmGeral.getIdade()+
                         "\nAltura:"+ProfessoresEmGeral.getAltura()+     
                          "\nPeso:"+ProfessoresEmGeral.getPeso()+                                           
